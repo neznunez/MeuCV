@@ -1,0 +1,242 @@
+/* CSS Document */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth; /* Habilita o scroll suave */
+    font-family: 'VCR OSD MONO', monospace;
+    background-image: url("images/BackgroundFF.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhor leitura */
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+section {
+    min-height: 100vh;
+    padding: 50px;
+    box-sizing: border-box;
+    color: white; /* Cor do texto para contraste com o fundo escuro */
+}
+
+/* Adiciona espaço extra na parte inferior da seção "Sobre Mim" */
+#sobre-mim {
+    margin-bottom: 50px; /* Ajuste o valor conforme a necessidade */
+}
+
+/* Ou, se preferir, adicione espaço no topo da seção "Experiências" */
+#experiencias {
+    margin-top: 150px; /* Ajuste o valor conforme a necessidade */
+}
+
+/* Estilos específicos para as seções */
+#sobre-mim, #experiencias, #conhecimentos {
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para as seções */
+}
+
+/* Ajustes para os containers de informação na seção "Sobre Mim" */
+#sobre-mim .info-container {
+    display: flex;
+    gap: 20px; /* Espaçamento entre os frames e a imagem */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin-top: 20px; /* Margem superior */
+}
+
+#sobre-mim .info-frame {
+    border: 2px solid #F79C07; /* Frame laranja sem preenchimento */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno ao redor do texto */
+    width: auto; /* Ajusta a largura ao conteúdo */
+    max-width: 50%; /* Limita a largura máxima para evitar sobreposição */
+    box-sizing: border-box;
+}
+
+/* Estilos para os elementos de texto dentro dos frames */
+#sobre-mim .info-frame h2, 
+#sobre-mim .info-frame p {
+    margin: 5px 0; /* Reduz o espaçamento entre os elementos de texto */
+    line-height: 1.2; /* Ajuste a altura da linha conforme necessário */
+}
+
+/* Estilos para a imagem de perfil no canto direito */
+#sobre-mim .profile-image {
+    max-width: 150px; /* Largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: auto; /* Empurra a imagem para a direita */
+    margin-right: 10px; /* Margem de respiro do canto direito */
+    display: block;
+}
+
+#sobre-mim .Imagem-nova{
+	
+	 max-width: 100px; /* Largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-left: auto; /* Empurra a imagem para a direita */
+    margin-right: 10px; /* Margem de respiro do canto direito */
+    display: block;
+	
+}
+
+
+
+/* Estilos para o contêiner "Sobre mim" */
+#sobre-mim .about-me-container {
+    display: flex;
+    justify-content: center; /* Centraliza o frame na página */
+    padding: 20px;
+    margin-left: 300px; /* Margem esquerda para mover o frame para a direita */
+    margin-top: 20px; /* Margem superior */
+}
+
+/* Estilos para o frame "Sobre mim" */
+#sobre-mim .about-me-frame {
+    max-width: 800px; /* Largura máxima do frame */
+    width: 100%; /* Largura completa para telas menores */
+    margin: 20px 0; /* Margem superior e inferior */
+    padding: 20px; /* Espaçamento interno */
+    border: 2px solid #F79C07; /* Estilo da borda */
+    color: white; /* Cor do texto */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+    text-align: justify; /* Alinhamento do texto */
+}
+
+/* Adaptações para mobile e responsividade */
+@media (max-width: 768px) {
+    #sobre-mim .info-container {
+        /* Empilha os frames e a imagem verticalmente em telas menores */
+        flex-direction: column;
+    }
+    #sobre-mim .info-frame {
+        width: 100%; /* Largura completa para os frames em telas menores */
+        margin-bottom: 20px; /* Espaçamento na parte inferior de cada frame */
+    }
+
+    #sobre-mim .profile-image {
+        max-width: 100%; /* Largura máxima de 100% para a imagem */
+        margin: 0 auto 20px; /* Centraliza a imagem horizontalmente e adiciona margem inferior */
+    }
+	
+	
+
+    #sobre-mim .about-me-container {
+        margin-left: 0; /* Remove a margem esquerda adicional em telas menores */
+        padding: 10px; /* Reduz o espaçamento externo para economizar espaço */
+    }
+
+    #sobre-mim .about-me-frame {
+        max-width: none; /* Remove a restrição de largura máxima em telas menores */
+        margin: 10px 0; /* Ajusta a margem para o frame "Sobre mim" */
+        padding: 10px; /* Reduz o espaçamento interno do frame */
+        text-align: left; /* Alinhamento do texto à esquerda para melhor legibilidade */
+    }
+}
+
+/* Estilos para a seção "Experiências" */
+#experiencias .exp-container {
+    display: flex;
+    justify-content: center; /* Centraliza os frames na horizontal */
+    flex-wrap: wrap; /* Permite que os frames se ajustem em telas menores */
+    gap: 20px; /* Espaçamento entre os frames */
+    padding: 50px 0;
+}
+
+#experiencias .exp-frame {
+    border: 1px solid #F79C07; /* Cor laranja da borda */
+    padding: 10px;
+    width: calc(35% - 20px); /* Largura ajustada para incluir o gap */
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    margin: 10px 0; /* Margem ao redor dos frames */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+    text-align: justify; /* Alinhamento do texto */
+}
+
+@media (max-width: 768px) {
+    #experiencias .exp-frame {
+        width: 100%; /* Largura completa para os frames em telas menores */
+        margin-bottom: 20px; /* Espaçamento na parte inferior de cada frame */
+    }
+}
+
+
+/* Estilos para a seção "Conhecimentos" */
+/* Estilos para a seção "Conhecimentos" */
+#conhecimentos {
+    text-align: center; /* Centraliza o título e os grupos de frames */
+    padding: 10px 0; /* Espaçamento acima e abaixo da seção */
+}
+
+#conhecimentos .row {
+    display: flex;
+    justify-content: center; /* Centraliza os frames na linha */
+    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
+    gap: 20px; /* Espaçamento entre os frames */
+}
+
+#conhecimentos .info-frame {
+    flex-basis: calc(40% - 10px); /* Largura ajustada para dois frames por linha */
+    max-width: calc(50% - 10px); /* Prevenindo que ultrapassem 50% da largura */
+	margin-bottom: 55px;
+    border: 2px solid #F79C07; /* Estilo da borda */
+    padding: 10px;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+}
+
+#expTitle {
+  text-align: left;
+  /* Outros estilos */
+}
+
+#conhecimentoTitle {
+    text-align: left; /* Alinha o texto à direita */
+	   padding-left: 50px;
+	padding-bottom: 80px;
+}
+
+
+
+@media (max-width: 768px) {
+    #conhecimentos .info-frame {
+        flex-basis: 100%; /* Em telas menores, cada frame ocupa a largura total */
+        max-width: 100%; /* Prevenindo que ultrapassem 100% da largura */
+    }
+}
+
+.info-frame .frame-title {
+    text-align: left;
+    display: block;
+    padding-right: 20px;
+    margin-bottom: 10px;
+}
+
+#habilidadePhotoshop, #habilidadeIllustrator, #habilidadeAfter, #habilidadeBlender, #habilidadeUnity, #habilidadeUnreal,  #habilidadeSpark, #habilidadeAero, #habilidadeProcessing, #habilidadeSwift{
+    margin: 7px 0; /* Espaçamento acima e abaixo da barra */
+    width: 100%; /* Largura total do contêiner */
+    height: 15px; /* Altura da barra de progresso */
+/*    background-color: #F79C07;  Cor de fundo da barra (opcional) */
+    border-radius: 4px; /* Cantos arredondados para a barra de progresso */
+}

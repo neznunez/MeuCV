@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* Estilo para o contêiner da animação */
+#animacaoContainer {
+    position: absolute;
+    top: 300px; /* Ajuste para mover para baixo */
+    left: 100px; /* Ajuste para mover para a direita */
+    width: 200px; /* Largura do contêiner de animação */
+    height: auto; /* Altura automática baseada no conteúdo */
+}
+/* Estilo para a imagem dentro do contêiner */
+#animacaoFrame {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}

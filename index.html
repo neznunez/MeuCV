@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+	 <link rel="stylesheet" href="Animation.css"> <!-- Atualize com o caminho correto -->
+</head>
+<body>
+
+    <!-- Primeira Seção: Sobre Mim -->
+    <section id="sobre-mim">
+        <div class="info-container">
+            <!-- Bloco de Texto: Informações Pessoais -->
+            <div id="infoPessoal" class="info-frame">
+                <!-- O texto será inserido aqui pela função de animação -->
+            </div>
+
+            <!-- Bloco de Texto: Formação -->
+            <div id="formacao" class="info-frame">
+                <!-- O texto será inserido aqui pela função de animação -->
+            </div>
+
+            <!-- Imagem de Perfil (Se necessário) -->
+			
+			<img src="images/neznunezeffect.png" alt="Profile class= "Imagem-nova">
+            <img src="images/Foldericon.png" alt="Sobre mim" class="profile-image">
+			
+			
+			
+        </div>
+        <div class="about-me-container">
+						<div id="animacaoContainer">
+        <img id="animacaoFrame" src="NezSequence/frame_00000.png" alt="Descrição da animação">
+    </div>
+            <div class="about-me-frame">
+                <span id="typewriteText" data-text=""></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Segunda Seção: Experiências -->
+    <section id="experiencias">
+        <h2 id="expTitle" data-text="Exp"></h2>
+        <div class="exp-container">
+			
+            <div class="exp-frame">
+                <span id="expText1" data-text=""></span>
+            </div>
+            <div class="exp-frame">
+                <span id="expText2" data-text=""></span>
+            </div>
+        </div>
+		
+		
+		
+		
+    </section>
+	
+	
+
+
+    <!-- Terceira Seção: Conhecimentos -->
+  <!-- Terceira Seção: Conhecimentos -->
+    <section id="conhecimentos">
+		
+        <h2 id="conhecimentoTitle" data-text="Softwares"></h2>
+
+        <div class="row">
+			
+			
+            <div class="info-frame">
+                <!-- Conteúdo do Frame Adobe -->
+               <span id="tituloAdobe" class="typewriter-text frame-title"></span>
+                <span id="tituloPhotoshop" class="typewriter-text" ></span>
+                <div id="habilidadePhotoshop" class="progress-bar"></div>
+                <span id="tituloIllustrator" class="typewriter-text" ></span>
+                <div id="habilidadeIllustrator" class="progress-bar"></div>
+                <span id="tituloAfter" class="typewriter-text" ></span>
+                <div id="habilidadeAfter" class="progress-bar"></div>
+            </div>
+
+            <div class="info-frame">
+                <!-- Conteúdo do Frame 3D/VR -->
+                <span id="titulo3D" class="typewriter-text frame-title" ></span>
+                <span id="tituloBlender" class="typewriter-text" ></span>
+                <div id="habilidadeBlender" class="progress-bar"></div>
+                <span id="tituloUnity" class="typewriter-text" ></span>
+                <div id="habilidadeUnity" class="progress-bar"></div>
+                <span id="tituloUnreal" class="typewriter-text"></span>
+                <div id="habilidadeUnreal" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="info-frame">
+                <!-- Conteúdo do Frame AR -->
+                <span id="tituloAR" class="typewriter-text frame-title"></span>
+                <span id="tituloMetaSpark" class="typewriter-text" ></span>
+                <div id="habilidadeSpark" class="progress-bar"></div>
+                <span id="tituloAero" class="typewriter-text" ></span>
+                <div id="habilidadeAero" class="progress-bar"></div>
+            </div>
+
+            <div class="info-frame">
+                <!-- Conteúdo do Frame Dev -->
+                <span id="tituloDev" class= "typewriter-text frame-title" ></span>
+                <span id="tituloProcessing" class="typewriter-text" data-text="Processing:"></span>
+                <div id="habilidadeProcessing" class="progress-bar"></div>
+                <span id="tituloSwift" class="typewriter-text" data-text="Swift:"></span>
+                <div id="habilidadeSwift" class="progress-bar"></div>
+            </div>
+        </div>
+
+        <!-- Adicione mais grupos de software conforme necessário -->
+    </section>
+  <script src="progressbar.js-master/dist/progressbar.min.js"></script>
+    <script src="script.js"></script>
+	
+</body>
+</html>
